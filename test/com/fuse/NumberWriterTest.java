@@ -10,6 +10,7 @@ public class NumberWriterTest {
 
     @Test
     public void testOneThroughTen() {
+        assertEquals("zero", numberWriter.numToWord(0));
         assertEquals("one", numberWriter.numToWord(1));
         assertEquals("two", numberWriter.numToWord(2));
         assertEquals("three", numberWriter.numToWord(3));
@@ -19,7 +20,6 @@ public class NumberWriterTest {
         assertEquals("seven", numberWriter.numToWord(7));
         assertEquals("eight", numberWriter.numToWord(8));
         assertEquals("nine", numberWriter.numToWord(9));
-        assertEquals("ten", numberWriter.numToWord(10));
     }
 
 }
